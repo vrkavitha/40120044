@@ -10,12 +10,12 @@ app = Flask(_name_)
 
 def get_train_schedules():
 
-    # Replace 'YOUR_ACCESS_TOKEN' with the actual access token provided by John Doe Railways
+    
 
     access_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODY4NDM0MzEsImNvbXBhbnlOYW1lIjoiU2F0aHlhYmFtYSBJbnN0aXR1dGUgb2Ygc2NpZW5jZSBhbmQgdGVjaG5vbG9neSIsImNsaWVudElEIjoiNWYwNmQ2NmItYTM4Zi00ZTdmLWI1ZDctMGE3OTlmYWRlMzc5Iiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IjQwMTIwMDQ0In0.Xct5xe7zptx0Dy35vndyvz-ZD2c_3BlDl01rHB1EWD4'
 
 
-    # Make a request to the John Doe Railways API to retrieve train data
+   
 
     response = requests.get('http://104.211.219.98/train/trains', headers={'Authorization': f'Token {access_token}'})
 
@@ -25,9 +25,7 @@ def get_train_schedules():
         train_data = response.json()
 
 
-        # Process the data to filter trains departing in the next 12 hours
-
-        # and sort them based on the specified criteria
+        
 
 
         processed_data = process_train_data(train_data)
@@ -41,11 +39,7 @@ def get_train_schedules():
 
 def process_train_data(train_data):
 
-    # Process the train data here according to the specified criteria
-
-    # Filter trains departing in the next 12 hours
-
-    # Sort the trains based on the specified criteria
+   
 
 
     processed_data = train_data  # Placeholder implementation, replace with actual processing logic
